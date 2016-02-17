@@ -1,0 +1,9 @@
+{
+	"action":{
+		"login":"/class/act/sys/loginAct"
+	},
+	"interceptor":{
+		"validatLoginIcr":{"path":"/class/icr/wholeIcr1"},
+		"validatTestIcr":{"path":"/class/icr/wholeIcr2","action":["login"]}
+	}
+}
