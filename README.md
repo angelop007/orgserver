@@ -2,7 +2,7 @@ Support Node JS 4.x, 5.x version
 
 * javascript ES6 join syntax
 
-* Items can be configured independently,Not currently configured independently Port and DNS
+* items can be configured independently,Not currently configured independently Port and DNS
 
   example configured independently:
   
@@ -63,7 +63,7 @@ Support Node JS 4.x, 5.x version
 			"file":"message"
 		}
 
-	Default configuration localhost/config/i18n/zh-cn/message.json
+	default configuration localhost/config/i18n/zh-cn/message.json
 	
 	example configured independently:
 		localhost/config/i18n/zh-cn/sys-login.json
@@ -154,7 +154,7 @@ Support Node JS 4.x, 5.x version
 
 * action and interceptor
 
-	Default configuration  localhost/config/action.json
+	default configuration  localhost/config/action.json
 	
 	example action:
 	
