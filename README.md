@@ -63,102 +63,104 @@ $(function(){
 		localhost/config/i18n/zh-cn/sys-login.json
 		
 		localhost/act/sys/loginAct.js:
-		
+	```javascript
 		get _msgFile(){
 			return 'sys-login'
 		}
+	```
 
 * gzip
-
-		"gzip":{
-			"open":true,
-			"extension":[
-				"css","js","html","htm"
-			]
-		}
-
+	```javascript
+	"gzip":{
+		"open":true,
+		"extension":[
+			"css","js","html","htm"
+		]
+	}
+	```
 * crypto
-
-		"crypto":{
-			"key":"random",
-			"iv":"2014050100000001",
-			"input":"utf8",
-			"output":"base64",
-			"keyAlgorithm":"sha256",
-			"textAlgorithm":"aes-256-cbc"
-		}
-	
+	```javascript
+	"crypto":{
+		"key":"random",
+		"iv":"2014050100000001",
+		"input":"utf8",
+		"output":"base64",
+		"keyAlgorithm":"sha256",
+		"textAlgorithm":"aes-256-cbc"
+	}
+	```
 * filterFile
-
-		"filterFile":[
-			"/__demoFile.js"
-		]
-
+	```javascript
+	"filterFile":[
+		"/__demoFile.js"
+	]
+	```
 * filterFolder
-
-		"filterFolder":[
-			"/class/","/__demoFolder/"
-		]
-
+	```javascript
+	"filterFolder":[
+		"/class/","/__demoFolder/"
+	]
+	```
 * filterMime
-
-		"filterMime":{
-			"":"text/plain",
-			"htm":"text/html",
-			"html":"text/html",
-			"ico":"image/x-icon",
-			"js":"application/x-javascript",
-			"swf":"application/x-shockwave-flash",
-			"css":"text/css",
-			"json":"text/json",
-			"txt":"text/plain",
-			"jpg":"image/jpeg",
-			"gif":"image/gif",
-			"png":"image/png",
-			"woff":"application/x-font-woff",
-			"woff2":"application/x-font-woff",
-			"eot":"application/octet-stream",
-			"ttf":"application/octet-stream",
-			"svg":"image/svg+xml",
-			"mp4":"video/mp4",
-			"webm":"video/webm",
-			"mp3":"audio/mpeg",
-			"weba":"audio/webm",
-			"m4a":"audio/mpeg",
-			"ogx":"application/ogg",
-			"oga":"audio/ogg",
-			"spx":"audio/ogg",
-			"ogg":"audio/ogg",
-			"ogv":"video/ogg",
-			"wav":"audio/wav",
-			"apk":"application/vnd.android.package-archive",
-			"zip":"application/zip",
-			"manifest":"text/cache-manifest"
-		}
-
+	```javascript
+	"filterMime":{
+		"":"text/plain",
+		"htm":"text/html",
+		"html":"text/html",
+		"ico":"image/x-icon",
+		"js":"application/x-javascript",
+		"swf":"application/x-shockwave-flash",
+		"css":"text/css",
+		"json":"text/json",
+		"txt":"text/plain",
+		"jpg":"image/jpeg",
+		"gif":"image/gif",
+		"png":"image/png",
+		"woff":"application/x-font-woff",
+		"woff2":"application/x-font-woff",
+		"eot":"application/octet-stream",
+		"ttf":"application/octet-stream",
+		"svg":"image/svg+xml",
+		"mp4":"video/mp4",
+		"webm":"video/webm",
+		"mp3":"audio/mpeg",
+		"weba":"audio/webm",
+		"m4a":"audio/mpeg",
+		"ogx":"application/ogg",
+		"oga":"audio/ogg",
+		"spx":"audio/ogg",
+		"ogg":"audio/ogg",
+		"ogv":"video/ogg",
+		"wav":"audio/wav",
+		"apk":"application/vnd.android.package-archive",
+		"zip":"application/zip",
+		"manifest":"text/cache-manifest"
+	}
+	```
 * DNS
-	
-		"dns":{
-			"localhost":"E:/work/server/localhost",
-			"127.0.0.1":"E:/work/server/orgui",
-			"www.example.com":"E:/work/server/www.example.com",
-			"example.com":"E:/work/server/www.example.com",
-			"xxx.example.com":"E:/work/server/xxx.example.com"
-		}
-
+	```javascript
+	"dns":{
+		"localhost":"E:/work/server/localhost",
+		"127.0.0.1":"E:/work/server/orgui",
+		"www.example.com":"E:/work/server/www.example.com",
+		"example.com":"E:/work/server/www.example.com",
+		"xxx.example.com":"E:/work/server/xxx.example.com"
+	}
+	```
 * action and interceptor
 
 	default configuration  localhost/config/action.json
 	
 	example action:
-	
-		"action":{
-			"login":"/class/act/sys/loginAct"
-		}
-	
+	```javascript
+	"action":{
+		"login":"/class/act/sys/loginAct"
+	}
+	```
 	example interceptor:
-	
-		"interceptor":{
-			"validatLoginIcr":{"path":"/class/icr/wholeIcr1"},
-			"validatTestIcr":{"path":"/class/icr/wholeIcr2","action":["login"]}
-		}
+	```javascript
+	"interceptor":{
+		"validatLoginIcr":{"path":"/class/icr/wholeIcr1"},
+		"validatTestIcr":{"path":"/class/icr/wholeIcr2","action":["login"]}
+	}
+	```
