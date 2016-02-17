@@ -1,7 +1,6 @@
 'use strict';
 
-const url = require('url'),
-	  fs  = require('fs');
+const url = require('url');
 
 class mvc{
 	action(){

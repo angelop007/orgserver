@@ -1,5 +1,7 @@
 'use strict';
 
+const fs = require('fs');
+
 class loginAct{
 	constructor(_obj){
 		if(_obj){
@@ -17,8 +19,13 @@ class loginAct{
 		return 'index.html';
 	}
 	file(){
-		console.log('fileAct:   ',22333);
-		return {msg:'suc',id:'10001',result:{data:['1','2']}};
+		console.log('file:   ',this.parameter);
+		//html page <input name="gfiles" type="file">
+		let obj_file = this.parameter.find((_obj)=>_obj.name=='gfiles');
+		fs.writeFile(
+			this.directory+'update/img/'+new Date().getTime()+Math.round(Math.random()*1000)+'.'+obj_file.filename.split('.')[1],
+			obj_file.buffer);
+	    return {msg:'suc',id:'10001',result:{data:['1','2']}};
 	}
 	add(){
 		console.log('add:   ',this.session.set('add',{name:'dd'}));
