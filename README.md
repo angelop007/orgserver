@@ -56,7 +56,8 @@ Support Node JS 4.x, 5.x version
 			};
 			$('a').click(fun_submit);
 		});
-		
+	```
+	
 * i18n
 
 		"i18n":{
