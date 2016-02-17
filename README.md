@@ -11,7 +11,7 @@ Support Node JS 4.x, 5.x version
 * upload
 
   example upload:		
-```javascript
+	```javascript
 $(function(){
 	var fun_submit=function(){
 		var form = $('form'),
@@ -26,29 +26,29 @@ $(function(){
 		});
 		console.log(data);
 		pubFun.ajax({
-    url:'login/file',
-    data:data,
-    ct:false,
-    pd:false,
-    suc:function(_data){
-        if(undefined!=_data){
-            if('err'==_data.msg){
-                alert(_data.description);
-            }else{
-                alert(_data.description);
-            }
-        }else{
-           console.log('success: ','upload error!');
-        }
-        console.log('success: ',_data);
-    },err:function(_data){
-      console.log('error: ',_data);
-    }
+	    url:'login/file',
+	    data:data,
+	    ct:false,
+	    pd:false,
+	    suc:function(_data){
+	        if(undefined!=_data){
+	            if('err'==_data.msg){
+	                alert(_data.description);
+	            }else{
+	                alert(_data.description);
+	            }
+	        }else{
+	           console.log('success: ','upload error!');
+	        }
+	        console.log('success: ',_data);
+	    },err:function(_data){
+	      console.log('error: ',_data);
+	    }
     });
 	};
 	$('a').click(fun_submit);
 });
-```
+	```
 	
 * i18n
 
