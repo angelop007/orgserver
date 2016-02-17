@@ -19,7 +19,7 @@ Support Node JS 4.x, 5.x version
 			</form>
 		</code>
 		
-	  ```javascript
+	```javascript
 		$(function(){
 			var fun_submit=function(){
 				var form = $('form'),
