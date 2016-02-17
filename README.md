@@ -10,7 +10,8 @@ Support Node JS 4.x, 5.x version
     
 * upload
 
-  example upload:		
+  example upload:
+  
 	```javascript
 $(function(){
 	var fun_submit=function(){
@@ -51,6 +52,7 @@ $(function(){
 	```
 	
 * i18n
+
 	```javascript
 	"i18n":{
 		"path":"class/config/i18n",
@@ -63,13 +65,15 @@ $(function(){
 		localhost/config/i18n/zh-cn/sys-login.json
 		
 		localhost/act/sys/loginAct.js:
+		
 	```javascript
-		get _msgFile(){
-			return 'sys-login'
-		}
+	get _msgFile(){
+		return 'sys-login'
+	}
 	```
 
 * gzip
+
 	```javascript
 	"gzip":{
 		"open":true,
@@ -78,7 +82,9 @@ $(function(){
 		]
 	}
 	```
+	
 * crypto
+
 	```javascript
 	"crypto":{
 		"key":"random",
@@ -89,19 +95,25 @@ $(function(){
 		"textAlgorithm":"aes-256-cbc"
 	}
 	```
+	
 * filterFile
+
 	```javascript
 	"filterFile":[
 		"/__demoFile.js"
 	]
 	```
+	
 * filterFolder
+
 	```javascript
 	"filterFolder":[
 		"/class/","/__demoFolder/"
 	]
 	```
+	
 * filterMime
+
 	```javascript
 	"filterMime":{
 		"":"text/plain",
@@ -137,7 +149,9 @@ $(function(){
 		"manifest":"text/cache-manifest"
 	}
 	```
+	
 * DNS
+
 	```javascript
 	"dns":{
 		"localhost":"E:/work/server/localhost",
@@ -147,6 +161,7 @@ $(function(){
 		"xxx.example.com":"E:/work/server/xxx.example.com"
 	}
 	```
+	
 * action and interceptor
 
 	default configuration  localhost/config/action.json
