@@ -76,23 +76,25 @@ Support Node JS 4.x, 5.x version
 
 * gzip
 
-	"gzip":{
-		"open":true,
-		"extension":[
-			"css","js","html","htm"
-		]
-	}
+	example:
+
+		"gzip":{
+			"open":true,
+			"extension":[
+				"css","js","html","htm"
+			]
+		}
 
 * crypto
 
-	"crypto":{
-		"key":"random",
-		"iv":"2014050100000001",
-		"input":"utf8",
-		"output":"base64",
-		"keyAlgorithm":"sha256",
-		"textAlgorithm":"aes-256-cbc"
-	}
+		"crypto":{
+			"key":"random",
+			"iv":"2014050100000001",
+			"input":"utf8",
+			"output":"base64",
+			"keyAlgorithm":"sha256",
+			"textAlgorithm":"aes-256-cbc"
+		}
 	
 * filterFile
 
