@@ -10,53 +10,45 @@ Support Node JS 4.x, 5.x version
     
 * upload
 
-  example upload:
-  
-  	<code>
-	  	<form>
-				<input name="files" type="file" multiple="multiple" />
-				<a class="btn btn-default">ok</a>
-			</form>
-		</code>
-		
-	```javascript
-		$(function(){
-			var fun_submit=function(){
-				var form = $('form'),
-						data = new FormData();
-				form.find('[type="file"]').each(function(){
-					for(var a=0,file;file=this.files[a];a++){
-						data.append(this.name,file);
-					}
-				});
-				$.each(form.serializeArray(),function(){
-					data.append(this.name,$.trim(this.value));
-				});
-				console.log(data);
-				pubFun.ajax({
-	        url:'login/file',
-	        data:data,
-	        ct:false,
-	        pd:false,
-	        suc:function(_data){
-		        if(undefined!=_data){
-		            if('err'==_data.msg){
-		                alert(_data.description);
-		            }else{
-		                alert(_data.description);
-		            }
-		        }else{
-		           console.log('success: ','upload error!');
-		        }
-		        console.log('success: ',_data);
-	        },err:function(_data){
-	          console.log('error: ',_data);
-	        }
-		    });
-			};
-			$('a').click(fun_submit);
+  example upload:		
+```javascript
+$(function(){
+	var fun_submit=function(){
+		var form = $('form'),
+				data = new FormData();
+		form.find('[type="file"]').each(function(){
+			for(var a=0,file;file=this.files[a];a++){
+				data.append(this.name,file);
+			}
 		});
-	```
+		$.each(form.serializeArray(),function(){
+			data.append(this.name,$.trim(this.value));
+		});
+		console.log(data);
+		pubFun.ajax({
+    url:'login/file',
+    data:data,
+    ct:false,
+    pd:false,
+    suc:function(_data){
+        if(undefined!=_data){
+            if('err'==_data.msg){
+                alert(_data.description);
+            }else{
+                alert(_data.description);
+            }
+        }else{
+           console.log('success: ','upload error!');
+        }
+        console.log('success: ',_data);
+    },err:function(_data){
+      console.log('error: ',_data);
+    }
+    });
+	};
+	$('a').click(fun_submit);
+});
+```
 	
 * i18n
 
