@@ -58,10 +58,10 @@ Support Node JS 4.x, 5.x version
 		
 * i18n
 
-	"i18n":{
-		"path":"class/config/i18n",
-		"file":"message"
-	}
+		"i18n":{
+			"path":"class/config/i18n",
+			"file":"message"
+		}
 
 	Default configuration localhost/config/i18n/zh-cn/message.json
 	
@@ -75,8 +75,6 @@ Support Node JS 4.x, 5.x version
 		}
 
 * gzip
-
-	example:
 
 		"gzip":{
 			"open":true,
@@ -98,61 +96,61 @@ Support Node JS 4.x, 5.x version
 	
 * filterFile
 
-	"filterFile":[
-		"/__demoFile.js"
-	]
+		"filterFile":[
+			"/__demoFile.js"
+		]
 
 * filterFolder
 
-	"filterFolder":[
-		"/class/","/__demoFolder/"
-	]
+		"filterFolder":[
+			"/class/","/__demoFolder/"
+		]
 
 * filterMime
 
-	"filterMime":{
-		"":"text/plain",
-		"htm":"text/html",
-		"html":"text/html",
-		"ico":"image/x-icon",
-		"js":"application/x-javascript",
-		"swf":"application/x-shockwave-flash",
-		"css":"text/css",
-		"json":"text/json",
-		"txt":"text/plain",
-		"jpg":"image/jpeg",
-		"gif":"image/gif",
-		"png":"image/png",
-		"woff":"application/x-font-woff",
-		"woff2":"application/x-font-woff",
-		"eot":"application/octet-stream",
-		"ttf":"application/octet-stream",
-		"svg":"image/svg+xml",
-		"mp4":"video/mp4",
-		"webm":"video/webm",
-		"mp3":"audio/mpeg",
-		"weba":"audio/webm",
-		"m4a":"audio/mpeg",
-		"ogx":"application/ogg",
-		"oga":"audio/ogg",
-		"spx":"audio/ogg",
-		"ogg":"audio/ogg",
-		"ogv":"video/ogg",
-		"wav":"audio/wav",
-		"apk":"application/vnd.android.package-archive",
-		"zip":"application/zip",
-		"manifest":"text/cache-manifest"
-	}
+		"filterMime":{
+			"":"text/plain",
+			"htm":"text/html",
+			"html":"text/html",
+			"ico":"image/x-icon",
+			"js":"application/x-javascript",
+			"swf":"application/x-shockwave-flash",
+			"css":"text/css",
+			"json":"text/json",
+			"txt":"text/plain",
+			"jpg":"image/jpeg",
+			"gif":"image/gif",
+			"png":"image/png",
+			"woff":"application/x-font-woff",
+			"woff2":"application/x-font-woff",
+			"eot":"application/octet-stream",
+			"ttf":"application/octet-stream",
+			"svg":"image/svg+xml",
+			"mp4":"video/mp4",
+			"webm":"video/webm",
+			"mp3":"audio/mpeg",
+			"weba":"audio/webm",
+			"m4a":"audio/mpeg",
+			"ogx":"application/ogg",
+			"oga":"audio/ogg",
+			"spx":"audio/ogg",
+			"ogg":"audio/ogg",
+			"ogv":"video/ogg",
+			"wav":"audio/wav",
+			"apk":"application/vnd.android.package-archive",
+			"zip":"application/zip",
+			"manifest":"text/cache-manifest"
+		}
 
 * DNS
 	
-	"dns":{
-		"localhost":"E:/work/server/localhost",
-		"127.0.0.1":"E:/work/server/orgui",
-		"www.example.com":"E:/work/server/www.example.com",
-		"example.com":"E:/work/server/www.example.com",
-		"xxx.example.com":"E:/work/server/xxx.example.com"
-	}
+		"dns":{
+			"localhost":"E:/work/server/localhost",
+			"127.0.0.1":"E:/work/server/orgui",
+			"www.example.com":"E:/work/server/www.example.com",
+			"example.com":"E:/work/server/www.example.com",
+			"xxx.example.com":"E:/work/server/xxx.example.com"
+		}
 
 * action and interceptor
 
