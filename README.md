@@ -8,16 +8,18 @@ Support Node JS 4.x, 5.x version
   
     localhost/class/config/ser-config.json
     
-* updata
+* upload
 
-  example updata:
+  example upload:
   
-  	<form>
-			<input name="gfiles" type="file" multiple="multiple" />
-			<a class="btn btn-default">ok</a>
-		</form>
+  	<code>
+	  	<form>
+				<input name="files" type="file" multiple="multiple" />
+				<a class="btn btn-default">ok</a>
+			</form>
+		</code>
 		
-		<script>
+	  ```javascript
 		$(function(){
 			var fun_submit=function(){
 				var form = $('form'),
@@ -54,7 +56,6 @@ Support Node JS 4.x, 5.x version
 			};
 			$('a').click(fun_submit);
 		});
-		</script>
 		
 * i18n
 
