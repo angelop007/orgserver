@@ -51,12 +51,12 @@ $(function(){
 	```
 	
 * i18n
-
+	```javascript
 		"i18n":{
 			"path":"class/config/i18n",
 			"file":"message"
 		}
-
+	```
 	default configuration localhost/config/i18n/zh-cn/message.json
 	
 	example configured independently:
