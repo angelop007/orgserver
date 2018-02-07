@@ -13,8 +13,8 @@ Support Node JS 4.x, 5.x version
   example upload:
   
 	```javascript
-		$(function(){
-			var fun_submit=function(){
+	$(function(){
+		var fun_submit=function(){
 			var form = $('form'),
 			data = new FormData();
 			form.find('[type="file"]').each(function(){
